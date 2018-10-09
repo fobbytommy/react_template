@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 
 class Main extends Component {
-    render() { 
-        return ( 
-            <div>
-            <h1>
-                Main page
-            </h1>
-                <button className="btn btn-lg btn-primary-outline">Go to home</button>
-            </div>
-         );
-    }
+	render() {
+		return (
+			<div>
+				<header>
+					<h1>React Template for general websites</h1>
+				</header>
+				<p>
+					<button className="btn btn-lg btn-danger">testing bootstrap</button>
+				</p>
+			</div>
+		);
+	}
 }
- 
+
 export default Main;

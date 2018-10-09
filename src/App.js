@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Navigation from './components/Navigation';
 
 class App extends Component {
 	render() {
 		return (
-			<div className="container">
-				<header>
-					<h1>React Template for general websites</h1>
-				</header>
-				<p>
-					<button className="btn btn-lg btn-danger">testing bootstrap</button>
-				</p>
-			</div>
+			<Fragment>
+				<Navigation />
+				<div className="container">{this.props.children}</div>
+			</Fragment>
 		);
 	}
 }
