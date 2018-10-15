@@ -7,10 +7,12 @@ import Main from './Main';
 import Home from './Home';
 import NotFound from './NotFound';
 
-const Router = () => {
+const Router = props => {
+	// console.log(props);
+
 	return (
 		<BrowserRouter>
-			<App>
+			<App {...props.children}>
 				<Switch>
 					<Route exact path="/" component={Main} />
 					<Route path="/home" component={Home} />
