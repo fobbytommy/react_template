@@ -12,9 +12,9 @@ const Router = props => {
 
 	return (
 		<BrowserRouter>
-			<App {...props.children}>
+			<App>
 				<Switch>
-					<Route exact path="/" component={Main} />
+					<Route exact path="/" component={Main} {...props} />
 					<Route path="/home" component={Home} />
 					<Route component={NotFound} />
 				</Switch>
